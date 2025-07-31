@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- ==================== META TAGS CONFIGURATION ==================== -->
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+    <!-- Viewport Settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==================== Page Title ==================== -->
+    <title>سويفت رايد</title>
+    <!--  Icon Website -->
+    <link rel="icon" href="assets/Imges/s-news.png" type="image/x-icon">
+    <!-- ==================== CSS Files ==================== -->
+    <!-- Font Awesome CSS (minified) - Icon library for scalable vector icons -->
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <!-- Animate.css (minified) - CSS animation library for ready-to-use animations -->
+    <link rel="stylesheet" href="assets/CSS/animate.min.css">
+    <!-- Bootstrap CSS (minified) - Front-end framework for responsive design -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <!-- Custom Stylesheet - Site-specific CSS overrides and custom styles -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- Bootstrap CSS Source Map (development only) - Debugging helper for minified CSS -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css.map">
+    <!-- Fonte google -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class=" container-fluid  sticky-top">
+        <nav class="navbar navbar-expand-lg   custom-border">
+            <div class="container custom-container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="assets/Imges/logo.png" alt="Swiftride Logo">
+                </a>
+                <button class="navbar-toggler no-border" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between d-none d-lg-flex" id="main">
+                    <!-- Centered Links (Desktop) -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#about-us">Features</a>
+                        </li>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">How It Works</a>
+                        </li>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">Testimonials</a>
+                        </li>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">Contact</a></li>
+                    </ul>
+                    <!-- Right Side Buttons (Desktop) -->
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <img src="assets/Imges/American-flag.png" alt="US Flag" />
+                        <select id="language-dropdown">
+                            <option value="en"> <a href="index.html">En</a> </option>
+                            <option value="ar"><a href="index.ar.html">Ar</a></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Offcanvas for Mobile & iPad -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="assets/Imges/logo.png" alt="Swiftride Logo">
+                </a>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="language-selector">
+                        <img src="assets/Imges/American-flag.png" alt="US Flag" />
+                        <select id="language-dropdown">
+                            <option value="en"><a href="index.html">En</a></option>
+                            <option value="ar"><a href="index.ar.html">Ar</a></option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
+                <ul class="navbar-nav link-nav mb-4">
+                    <li class="nav-item mt-item light-gray "><a class="nav-link" href="#about-us">Features</a></li>
+                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">How It Works</a></li>
+                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">Testimonials</a></li>
+                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- ==================== HEADER ==================== -->
+
+    <main class="container">
+        <!-- ==================== HERO section ==================== -->
+        <section class="hero-section m-s-e-40 mb-5">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mt-200">
+                        <h1 class="hero-title fw-bolder">Your Jounrney, Our <span class="highlight ">Priority</span>
+                        </h1>
+                        <p class="hero-text">Connect with reliable drivers or start earning as a driver - all in one
+                            app. Experience seamless rides and flexible opportunities.</p>
+                        <h3 class="titel-download fw-bolder">Download the App</h3>
+                        <div style="display: flex; gap: 15px; margin-top: 20px;">
+                            <a href="#" class="app-store-btn">
+                                <i class="fa-brands fa-apple " style="font-size: 25px; margin-left: 5px;"></i>
+                                <div class="app-store-text">
+                                    <p>Download on the</p>
+                                    <h3>App Store</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="app-store-btn">
+                                <i class="fa-brands fa-google-play" style="font-size: 25px; margin-left: 5px;"></i>
+                                <div class="app-store-text">
+                                    <p>GET IT ON</p>
+                                    <h3>Google Play</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="position-relative text-center">
+                            <img class="chart" src="assets/Imges/backe-ground.png" alt="">
+                            <img class="img-iphone" src="assets/Imges/iphone.png" alt="">
+                            <img class="inner-screen" src="assets/Imges/Image.png" alt="App Screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HERO section ==================== -->
+
+        <!-- ==================== WHY CHOOSE SWIFTRIDE section ==================== -->
+        <section class="Why-Swiftride mt-5">
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-between pb-5 ps-4 pe-4">
+                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">Why Choose Swiftride</h2>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-location-dot blue-color i-size"></i>
+                                <h5 class="card-title fw-bolder">Quick Booking</h5>
+                                <p class="card-text text-muted">Book your ride in seconds with our intuitive interface
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-paper-plane blue-color i-size"></i>
+                                <h5 class="card-title fw-bolder">Real-Time Tracking</h5>
+                                <p class="card-text text-muted">Track your driver's location in real-time</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet blue-color i-size"></i>
+                                <h5 class="card-title fw-bolder">Secure Payments</h5>
+                                <p class="card-text text-muted">Multiple payment options with secure transactions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 ">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-headset blue-color i-size"></i>
+                                <h5 class="card-title  fw-bolder">24/7 Support</h5>
+                                <p class="card-text text-muted">Round-the-clock customer support for your needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== WHY CHOOSE SWIFTRIDE section ==================== -->
+
+        <!-- ==================== TRANSPORTATION SOLUTIONS section ==================== -->
+        <section class="container py-5 text-center">
+            <h2 class="headline fw-bolder">Experience Transportation Made Simple</h2>
+            <p class="text-muted">One app, two ways to move forward</p>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10 section-box p-4 d-flex flex-column flex-md-row align-items-center">
+                    <div class="col-md-6 text-start px-3">
+                        <h4 class="headline mb-3 fw-bolder ">For Riders</h4>
+                        <p class="text-color-weight">Book rides effortlessly, track drivers in real time, and enjoy a
+                            smooth journey.</p>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon back-icon"><i class="fa-regular fa-clock blue-color"></i></div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>Quick ride booking</strong><br />
+                                <small>Book your ride in seconds</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon back-icon"><i class="fa-solid fa-location-dot blue-color"></i>
+                            </div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>Live driver tracking</strong><br />
+                                <small>Real-time location updates</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon back-icon"><i class="fa-solid fa-shield-halved blue-color"></i>
+                            </div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>In-app secure payments</strong><br />
+                                <small>Safe and easy transactions</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-custom">Download App →</button>
+                    </div>
+                    <div class="col-md-6 mt-1 mt-md-0 px-3">
+                        <img src="assets/Imges/download.jpeg" alt="App in use" class="img-fluid  imge-made" />
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10 section-box p-4 d-flex flex-column flex-md-row align-items-center">
+                    <div class="col-md-6 mt-1 mt-md-0 px-3">
+                        <img src="assets/Imges/download-waman.jpeg" alt="App in use" class="img-fluid  imge-made" />
+                    </div>
+                    <div class="col-md-6 text-start px-3">
+                        <h4 class="headline mb-3 fw-bolder ">For Drivers</h4>
+                        <p class="text-color-weight">Earn on your schedule, manage trips easily, and grow your business.
+                        </p>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon back-icon"><i class="fa-regular fa-bell blue-color"></i></div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>Quick ride booking</strong><br />
+                                <small>Book your ride in seconds</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="feature-icon back-icon"><i class="fa-solid fa-chart-column blue-color"></i>
+                            </div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>Live driver tracking</strong><br />
+                                <small>Real-time location updates</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon back-icon"><i class="fa-regular fa-calendar-days blue-color"></i>
+                            </div>
+                            <div class="feature-text" style="margin-left: 10px;">
+                                <strong>In-app secure payments</strong><br />
+                                <small>Safe and easy transactions</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-custom2">Partner With Us →</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ==================== TRANSPORTATION SOLUTIONS section ==================== -->
+
+        <!-- ==================== Mobile App Screens ==================== -->
+        <section class="colds">
+            <div class="container py-5">
+                <h2 class="text-center section-title fw-bolder fs-1 mb-5">Experience Our App</h2>
+
+                <div class="d-flex justify-content-between flex-wrap  g-4 ps-5 pe-5">
+                    <div class="col-lg-2 col-md-3">
+                        <div class="app-card">
+                            <img src="assets/Imges/iphone.png" alt="Home Screen" class="img-fluid" />
+                        </div>
+                        <div class="app-label text-center fw-bold pt-4">Home Screen</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="app-card">
+                            <img src="assets/Imges/iphone.png" alt="Booking Interface" class="img-fluid" />
+                        </div>
+                        <div class="app-label text-center fw-bold pt-4">Booking Interface</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="app-card">
+                            <img src="assets/Imges/iphone.png" alt="Driver Tracking" class="img-fluid" />
+                        </div>
+                        <div class="app-label text-center fw-bold pt-4">Driver Tracking</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="app-card">
+                            <img src="assets/Imges/iphone.png" alt="Payment Screen" class="img-fluid" />
+                        </div>
+                        <div class="app-label text-center fw-bold pt-4">Payment Screen</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ==================== Mobile App Screens ==================== -->
+
+        <!-- ==================== HOW IT WORK section ==================== -->
+        <section class="how-work mt-5">
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-between pb-5 ps-4 pe-4">
+                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">How It Work</h2>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="backe-test  text-center">1</div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title fw-bolder text-center">Download & Register</h5>
+                                <p class="card-text text-muted text-center">Get the app and create your account</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="backe-test text-center">2</div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title fw-bolder text-center">Book Your Ride</h5>
+                                <p class="card-text text-muted text-center">Choose your pickup and drop-off locations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100  border-0 shadow-sm p-3">
+                            <div class="backe-test text-center">3</div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title fw-bolder text-center">Enjoy Your Journey</h5>
+                                <p class="card-text text-muted text-center">Track your driver and arrive safely</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== HOW IT WORK section ==================== -->
+
+        <!-- ==================== Customer reviews ==================== -->
+        <section class="container customer-reviews mt-5">
+            <div class="container py-5">
+                <h2 class="text-center section-title">What Our Users Say</h2>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="assets/Imges/test.webp" alt="Sarah Johnson" class="testimonial-img" />
+                                <div>
+                                    <p class="testimonial-name fw-bolder">Sarah Johnson</p>
+                                    <p class="testimonial-location">New York</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">
+                                The app is incredibly easy to use and I love how reliable the drivers are.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="assets/Imges/test.webp" alt="Michael Chen" class="testimonial-img" />
+                                <div>
+                                    <p class="testimonial-name fw-bolder">Michael Chen</p>
+                                    <p class="testimonial-location">San Francisco</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">
+                                As a driver, the earnings are great and the platform is very user-friendly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="assets/Imges/test.webp" alt="Emily Davis" class="testimonial-img" />
+                                <div>
+                                    <p class="testimonial-name fw-bolder">Emily Davis</p>
+                                    <p class="testimonial-location">Chicago</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">
+                                Best ride-hailing app I’ve used. The real-time tracking feature is a game-changer.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== Customer reviews ==================== -->
+    </main>
+    <!-- ==================== Download Section ==================== -->
+    <section class=" container-fluid cta-section text-white text-center position-relative py-5 bg-image">
+        <div class="overlay-dark"></div>
+        <div class="container position-relative z-2">
+            <h2 class="fw-bold mb-3">Ready to Get Started?</h2>
+            <p class="mb-4">Join thousands of satisfied riders and drivers today</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="store-btn">
+                    <i class="fab fa-apple fa-2x me-2"></i>
+                    <div class="text-start">
+                        <small class="store-small">Download on the</small><br>
+                        <span class="store-title">App Store</span>
+                    </div>
+                </a>
+                <a href="#" class="store-btn">
+                    <i class="fab fa-google-play fa-2x me-2"></i>
+                    <div class="text-start">
+                        <small class="store-small">Get it on</small><br>
+                        <span class="store-title">Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Download Section ==================== -->
+
+    <!-- ==================== footer ==================== -->
+    <footer class="container-fluid bg-footer text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+
+                <!-- Logo and Description -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="mb-3">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid" src="assets/Imges/logo-white.png " alt="Swiftride Logo">
+                        </a>
+                    </h5>
+                    <p class="fw-light">Making transportation easier and more accessible for everyone.</p>
+                </div>
+
+                <!-- Company -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Company</h6>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">About Us</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Careers</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Press</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Blog</a></p>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Resources</h6>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">Help Center</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">Safety</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">Cities</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">Partners</a></p>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Legal</h6>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">Terms of Service</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">Cookie Policy</a></p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1);" />
+
+            <!-- Bottom Row -->
+            <div class="row align-items-center pb-3 ">
+                <div class="col-md-5 text-center text-md-start bo-ro">
+                    <p class="mb-0 fw-light ">© 2025 Swiftride. All rights reserved.</p>
+                </div>
+
+                <div class="col-md-5 text-center text-md-end bo-ro2">
+                    <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==================== footer ==================== -->
+
+
+
+    <!-- ==================== JavaScript Files ==================== -->
+    <!-- Font Awesome JS (minified) - JavaScript version of the icon library -->
+    <script src="assets/JS/all.min.js"></script>
+    <!-- Bootstrap Bundle JS (minified) - Includes Bootstrap JS + Popper.js for components -->
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Source Map (development only) - Debugging helper for minified JS -->
+    <script src="assets/JS/bootstrap.bundle.min.js.map"></script>
+
+
+
+</body>
+
+</html>
