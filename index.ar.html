@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
     <!-- Custom Stylesheet - Site-specific CSS overrides and custom styles -->
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/style.ar.css">
     <!-- Bootstrap CSS Source Map (development only) - Debugging helper for minified CSS -->
     <link rel="stylesheet" href="assets/CSS/bootstrap.min.css.map">
     <!-- Fonte google -->
@@ -29,34 +30,35 @@
 <body>
     <!-- ==================== HEADER ==================== -->
     <header class=" container-fluid  sticky-top">
-        <nav class="navbar navbar-expand-lg   custom-border">
+        <nav class="navbar navbar-expand-lg   custom-border ">
             <div class="container custom-container">
                 <a class="navbar-brand" href="#">
-                    <img class="img-fluid" src="assets/Imges/logo.png" alt="Swiftride Logo">
+                    <img class="img-fluid logo-img" src="assets/Imges/logo-ar.png" alt="شعار سويفت رايد">
                 </a>
                 <button class="navbar-toggler no-border" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="تبديل التنقل">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between d-none d-lg-flex" id="main">
                     <!-- Centered Links (Desktop) -->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
-                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#about-us">Features</a>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#features">الميزات</a></li>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#works">كيف تعمل</a>
                         </li>
-                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">How It Works</a>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#testimonials">آراء
+                                العملاء</a>
                         </li>
-                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">Testimonials</a>
+                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#contact">تواصل معنا</a>
                         </li>
-                        <li class="nav-item light-gray"><a class="nav-link p-2 p-lg-3" href="#services">Contact</a></li>
                     </ul>
                     <!-- Right Side Buttons (Desktop) -->
                     <!-- Language Selector -->
                     <div class="language-selector">
-                        <img src="assets/Imges/American-flag.png" alt="US Flag" />
-                        <select id="language-dropdown">
-                            <option value="en"> <a href="index.html">En</a> </option>
-                            <option value="ar"><a href="index.ar.html">Ar</a></option>
+                        <img src="assets/Imges/istockphoto.jpg" alt="علم أمريكا" />
+                        <select id="language-dropdown" onchange="location.href = this.value;">
+                            <option value="index.ar.html">Ar</option>
+                            <option value="index.html">En</option>
                         </select>
                     </div>
                 </div>
@@ -64,87 +66,148 @@
         </nav>
         <!-- Offcanvas for Mobile & iPad -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-            <div class="offcanvas-header justify-content-between align-items-center">
+            <div class="offcanvas-header justify-content-between align-items-center px-4  py-3 bg-light">
                 <a class="navbar-brand" href="#">
-                    <img class="img-fluid" src="assets/Imges/logo.png" alt="Swiftride Logo">
+                    <img class="img-fluid logo-img" src="assets/Imges/logo-ar.png" alt="شعار سويفت رايد" style="max-height: 40px;">
                 </a>
-                <div class="d-flex align-items-center gap-2">
-                    <div class="language-selector">
-                        <img src="assets/Imges/American-flag.png" alt="US Flag" />
-                        <select id="language-dropdown">
-                            <option value="en"><a href="index.html">En</a></option>
-                            <option value="ar"><a href="index.ar.html">Ar</a></option>
-                        </select>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Improved Language Selector -->
+                    <div class="language-selector dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center"
+                            type="button" id="mobileLanguageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/Imges/American-flag.png" alt="علم أمريكا" width="20" class="me-1">
+                            <span>EN</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="mobileLanguageDropdown">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="index.html">
+                                    <img src="assets/Imges/American-flag.png" alt="علم أمريكا" width="20" class="me-2">
+                                    الإنجليزية
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="index.ar.html">
+                                    <img src="assets/Imges/Arabic-flag.png" alt="علم العربية" width="20" class="me-2">
+                                    العربية
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
                 </div>
             </div>
-            <div class="offcanvas-body d-flex flex-column justify-content-between">
-                <ul class="navbar-nav link-nav mb-4">
-                    <li class="nav-item mt-item light-gray "><a class="nav-link" href="#about-us">Features</a></li>
-                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">How It Works</a></li>
-                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">Testimonials</a></li>
-                    <li class="nav-item  light-gray "><a class="nav-link" href="#about-us">Contact</a></li>
+            <div class="offcanvas-body px-4 pt-3 pb-5 d-flex flex-column">
+                <!-- Main Navigation Links -->
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link px-3 py-2 rounded d-flex align-items-center" href="#features">
+                            <i class="fas fa-star me-3 text-primary"></i>
+                            <span>الميزات</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link px-3 py-2 rounded d-flex align-items-center" href="#works">
+                            <i class="fas fa-cogs me-3 text-primary"></i>
+                            <span>كيف تعمل</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link px-3 py-2 rounded d-flex align-items-center" href="#testimonials">
+                            <i class="fas fa-comment me-3 text-primary"></i>
+                            <span>آراء العملاء</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link px-3 py-2 rounded d-flex align-items-center" href="#contact">
+                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <span>تواصل معنا</span>
+                        </a>
+                    </li>
                 </ul>
+                <!-- Download App Buttons -->
+                <div class="mt-auto pt-4 border-top">
+                    <h6 class="text-muted mb-3 px-3">تحميل التطبيق</h6>
+                    <div class="d-grid gap-2">
+                        <a href="#"
+                            class="btn btn-dark btn-lg rounded-pill d-flex align-items-center justify-content-center py-2">
+                            <i class="fab fa-apple fa-lg me-2"></i>
+                            <div class="text-start">
+                                <small class="d-block" style="font-size: 0.7rem;">تحميل من</small>
+                                <span class="fw-bold">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="btn btn-dark btn-lg rounded-pill d-flex align-items-center justify-content-center py-2">
+                            <i class="fab fa-google-play fa-lg me-2"></i>
+                            <div class="text-start">
+                                <small class="d-block" style="font-size: 0.7rem;">تحميل من</small>
+                                <span class="fw-bold">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <!-- ==================== HEADER ==================== -->
 
-    <main class="container">
+    <main>
         <!-- ==================== HERO section ==================== -->
         <section class="hero-section m-s-e-40 mb-5">
             <div class="container ">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-200">
-                        <h1 class="hero-title fw-bolder">Your Jounrney, Our <span class="highlight ">Priority</span>
+                    <div class="col-lg-6 col-md-12 mt-200 order-lg-1 order-2">
+                        <h1 class="hero-title fw-bolder fs-1">رحلتك، رحلتنا <span class="highlight ">أولويتنا</span>
                         </h1>
-                        <p class="hero-text">Connect with reliable drivers or start earning as a driver - all in one
-                            app. Experience seamless rides and flexible opportunities.</p>
-                        <h3 class="titel-download fw-bolder">Download the App</h3>
+                        <p class="hero-text">
+                            تواصل مع سائقين موثوقين أو ابدأ في كسب المال كسائق - كل ذلك في تطبيق واحد.
+                            استمتع برحلات سلسة وفرص مرنة.
+                        </p>
+                        <h3 class="titel-download fw-bolder">حمّل التطبيق</h3>
                         <div style="display: flex; gap: 15px; margin-top: 20px;">
                             <a href="#" class="app-store-btn">
-                                <i class="fa-brands fa-apple " style="font-size: 25px; margin-left: 5px;"></i>
+                                <i class="fa-brands fa-apple" style="font-size: 25px; margin-left: 5px;"></i>
                                 <div class="app-store-text">
-                                    <p>Download on the</p>
+                                    <p>تحميل من</p>
                                     <h3>App Store</h3>
                                 </div>
                             </a>
                             <a href="#" class="app-store-btn">
                                 <i class="fa-brands fa-google-play" style="font-size: 25px; margin-left: 5px;"></i>
                                 <div class="app-store-text">
-                                    <p>GET IT ON</p>
+                                    <p>تحميل من</p>
                                     <h3>Google Play</h3>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-1">
                         <div class="position-relative text-center">
-                            <img class="chart" src="assets/Imges/backe-ground.png" alt="">
+                            <img class="chart" src="assets/Imges/backe-ground2.png" alt="">
                             <img class="img-iphone" src="assets/Imges/iphone.png" alt="">
-                            <img class="inner-screen" src="assets/Imges/Image.png" alt="App Screen">
+                            <img class="inner-screen" src="assets/Imges/Image.png" alt="شاشة التطبيق">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
         <!-- ==================== HERO section ==================== -->
 
         <!-- ==================== WHY CHOOSE SWIFTRIDE section ==================== -->
-        <section class="Why-Swiftride mt-5">
+        <section class="container-fluid Why-Swiftride mt-5" id="features">
             <div class="container mt-5">
                 <div class="row d-flex justify-content-between pb-5 ps-4 pe-4">
-                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">Why Choose Swiftride</h2>
+                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">لماذا تختار سويفت رايد</h2>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="card-body">
                                 <i class="fa-solid fa-location-dot blue-color i-size"></i>
-                                <h5 class="card-title fw-bolder">Quick Booking</h5>
-                                <p class="card-text text-muted">Book your ride in seconds with our intuitive interface
-                                </p>
+                                <h5 class="card-title fw-bolder">حجز سريع</h5>
+                                <p class="card-text text-muted">احجز رحلتك في ثوانٍ من خلال واجهتنا السهلة</p>
                             </div>
                         </div>
                     </div>
@@ -152,8 +215,8 @@
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="card-body">
                                 <i class="fa-solid fa-paper-plane blue-color i-size"></i>
-                                <h5 class="card-title fw-bolder">Real-Time Tracking</h5>
-                                <p class="card-text text-muted">Track your driver's location in real-time</p>
+                                <h5 class="card-title fw-bolder">تتبع لحظي</h5>
+                                <p class="card-text text-muted">تتبّع موقع السائق في الوقت الفعلي</p>
                             </div>
                         </div>
                     </div>
@@ -161,9 +224,8 @@
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet blue-color i-size"></i>
-                                <h5 class="card-title fw-bolder">Secure Payments</h5>
-                                <p class="card-text text-muted">Multiple payment options with secure transactions
-                                </p>
+                                <h5 class="card-title fw-bolder">مدفوعات آمنة</h5>
+                                <p class="card-text text-muted">خيارات دفع متعددة ومعاملات آمنة</p>
                             </div>
                         </div>
                     </div>
@@ -171,167 +233,170 @@
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="card-body">
                                 <i class="fa-solid fa-headset blue-color i-size"></i>
-                                <h5 class="card-title  fw-bolder">24/7 Support</h5>
-                                <p class="card-text text-muted">Round-the-clock customer support for your needs</p>
+                                <h5 class="card-title  fw-bolder">دعم 24/7</h5>
+                                <p class="card-text text-muted">دعم عملاء على مدار الساعة لتلبية احتياجاتك</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- ==================== WHY CHOOSE SWIFTRIDE section ==================== -->
 
         <!-- ==================== TRANSPORTATION SOLUTIONS section ==================== -->
         <section class="container py-5 text-center">
-            <h2 class="headline fw-bolder">Experience Transportation Made Simple</h2>
-            <p class="text-muted">One app, two ways to move forward</p>
+            <h2 class="headline fw-bolder">استمتع بتجربة نقل بسيطة</h2>
+            <p class="text-muted">تطبيق واحد، طريقتان للمضي قدمًا</p>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-10 section-box p-4 d-flex flex-column flex-md-row align-items-center">
-                    <div class="col-md-6 text-start px-3">
-                        <h4 class="headline mb-3 fw-bolder ">For Riders</h4>
-                        <p class="text-color-weight">Book rides effortlessly, track drivers in real time, and enjoy a
-                            smooth journey.</p>
+                    <div class="col-md-6 text-end px-3">
+                        <h4 class="headline text-end mb-3 fw-bolder">للمستخدمين</h4>
+                        <p class="text-color-weight">احجز رحلاتك بسهولة، تتبّع السائقين في الوقت الفعلي، واستمتع برحلة
+                            مريحة.</p>
                         <div class="d-flex align-items-start mb-3">
                             <div class="feature-icon back-icon"><i class="fa-regular fa-clock blue-color"></i></div>
-                            <div class="feature-text" style="margin-left: 10px;">
-                                <strong>Quick ride booking</strong><br />
-                                <small>Book your ride in seconds</small>
+                            <div class="feature-text">
+                                <strong>حجز سريع للرحلات</strong><br />
+                                <small>احجز رحلتك في ثوانٍ</small>
                             </div>
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <div class="feature-icon back-icon"><i class="fa-solid fa-location-dot blue-color"></i>
                             </div>
-                            <div class="feature-text" style="margin-left: 10px;">
-                                <strong>Live driver tracking</strong><br />
-                                <small>Real-time location updates</small>
+                            <div class="feature-text">
+                                <strong>تتبع السائق مباشر</strong><br />
+                                <small>تحديثات الموقع لحظيًا</small>
                             </div>
                         </div>
                         <div class="d-flex align-items-start mb-4">
                             <div class="feature-icon back-icon"><i class="fa-solid fa-shield-halved blue-color"></i>
                             </div>
-                            <div class="feature-text" style="margin-left: 10px;">
-                                <strong>In-app secure payments</strong><br />
-                                <small>Safe and easy transactions</small>
+                            <div class="feature-text">
+                                <strong>مدفوعات آمنة داخل التطبيق</strong><br />
+                                <small>معاملات آمنة وسهلة</small>
                             </div>
                         </div>
-                        <button class="btn btn-custom">Download App →</button>
+                        <button class="btn btn-custom">تحميل التطبيق ← </button>
                     </div>
-                    <div class="col-md-6 mt-1 mt-md-0 px-3">
-                        <img src="assets/Imges/download.jpeg" alt="App in use" class="img-fluid  imge-made" />
+                    <div class="col-md-6 mt-3 px-3">
+                        <img src="assets/Imges/download.jpeg" alt="التطبيق قيد الاستخدام"
+                            class="img-fluid  imge-made" />
                     </div>
                 </div>
             </div>
+
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-10 section-box p-4 d-flex flex-column flex-md-row align-items-center">
-                    <div class="col-md-6 mt-1 mt-md-0 px-3">
-                        <img src="assets/Imges/download-waman.jpeg" alt="App in use" class="img-fluid  imge-made" />
+                    <div class="col-md-6 mt-1 mt-md-0 mb-3 px-3">
+                        <img src="assets/Imges/download-waman.jpeg" alt="التطبيق قيد الاستخدام"
+                            class="img-fluid  imge-made" />
                     </div>
-                    <div class="col-md-6 text-start px-3">
-                        <h4 class="headline mb-3 fw-bolder ">For Drivers</h4>
-                        <p class="text-color-weight">Earn on your schedule, manage trips easily, and grow your business.
-                        </p>
+                    <div class="col-md-6 text-end px-3">
+                        <h4 class="headline mb-3 fw-bolder">للسائقين</h4>
+                        <p class="text-color-weight">اكسب المال بمرونة، نظّم رحلاتك بسهولة، ونمّ عملك الخاص.</p>
                         <div class="d-flex align-items-start mb-3">
                             <div class="feature-icon back-icon"><i class="fa-regular fa-bell blue-color"></i></div>
                             <div class="feature-text" style="margin-left: 10px;">
-                                <strong>Quick ride booking</strong><br />
-                                <small>Book your ride in seconds</small>
+                                <strong>حجز سريع للرحلات</strong><br />
+                                <small>احجز رحلتك في ثوانٍ</small>
                             </div>
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <div class="feature-icon back-icon"><i class="fa-solid fa-chart-column blue-color"></i>
                             </div>
                             <div class="feature-text" style="margin-left: 10px;">
-                                <strong>Live driver tracking</strong><br />
-                                <small>Real-time location updates</small>
+                                <strong>تتبع السائق مباشر</strong><br />
+                                <small>تحديثات الموقع لحظيًا</small>
                             </div>
                         </div>
                         <div class="d-flex align-items-start mb-4">
                             <div class="feature-icon back-icon"><i class="fa-regular fa-calendar-days blue-color"></i>
                             </div>
                             <div class="feature-text" style="margin-left: 10px;">
-                                <strong>In-app secure payments</strong><br />
-                                <small>Safe and easy transactions</small>
+                                <strong>مدفوعات آمنة داخل التطبيق</strong><br />
+                                <small>معاملات آمنة وسهلة</small>
                             </div>
                         </div>
-                        <button class="btn btn-custom2">Partner With Us →</button>
+                        <button class="btn btn-custom2">انضم إلينا ←</button>
                     </div>
-
                 </div>
             </div>
         </section>
+
         <!-- ==================== TRANSPORTATION SOLUTIONS section ==================== -->
 
         <!-- ==================== Mobile App Screens ==================== -->
-        <section class="colds">
+        <section class="container-fluid colds">
             <div class="container py-5">
-                <h2 class="text-center section-title fw-bolder fs-1 mb-5">Experience Our App</h2>
+                <h2 class="text-center section-title fw-bolder fs-1 mb-5">استعرض تطبيقنا</h2>
 
-                <div class="d-flex justify-content-between flex-wrap  g-4 ps-5 pe-5">
-                    <div class="col-lg-2 col-md-3">
+                <div class="d-flex justify-content-center justify-content-md-between flex-wrap  g-4 px-md-5 px-2">
+                    <div class="col-lg-2 col-md-3 ">
                         <div class="app-card">
-                            <img src="assets/Imges/iphone.png" alt="Home Screen" class="img-fluid" />
+                            <img src="assets/Imges/iphone.png" alt="الشاشة الرئيسية" class="img-fluid" />
                         </div>
-                        <div class="app-label text-center fw-bold pt-4">Home Screen</div>
+                        <div class="app-label text-center fw-bold pt-4 pb-4">الشاشة الرئيسية</div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 ">
+                        <div class="app-card">
+                            <img src="assets/Imges/iphone.png" alt="واجهة الحجز" class="img-fluid" />
+                        </div>
+                        <div class="app-label text-center fw-bold pt-4 pb-4">واجهة الحجز</div>
                     </div>
 
                     <div class="col-lg-2 col-md-3">
                         <div class="app-card">
-                            <img src="assets/Imges/iphone.png" alt="Booking Interface" class="img-fluid" />
+                            <img src="assets/Imges/iphone.png" alt="تتبع السائق" class="img-fluid" />
                         </div>
-                        <div class="app-label text-center fw-bold pt-4">Booking Interface</div>
+                        <div class="app-label text-center fw-bold pt-4 pb-4">تتبع السائق</div>
                     </div>
 
                     <div class="col-lg-2 col-md-3">
                         <div class="app-card">
-                            <img src="assets/Imges/iphone.png" alt="Driver Tracking" class="img-fluid" />
+                            <img src="assets/Imges/iphone.png" alt="شاشة الدفع" class="img-fluid" />
                         </div>
-                        <div class="app-label text-center fw-bold pt-4">Driver Tracking</div>
+                        <div class="app-label text-center fw-bold pt-4 pb-4">شاشة الدفع</div>
                     </div>
-
-                    <div class="col-lg-2 col-md-3">
-                        <div class="app-card">
-                            <img src="assets/Imges/iphone.png" alt="Payment Screen" class="img-fluid" />
-                        </div>
-                        <div class="app-label text-center fw-bold pt-4">Payment Screen</div>
-                    </div>
-
-
-
                 </div>
             </div>
         </section>
+
         <!-- ==================== Mobile App Screens ==================== -->
 
         <!-- ==================== HOW IT WORK section ==================== -->
-        <section class="how-work mt-5">
+        <section class="container-fluid how-work mt-5" id="works">
             <div class="container mt-5">
                 <div class="row d-flex justify-content-between pb-5 ps-4 pe-4">
-                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">How It Work</h2>
+                    <h2 class="why-title text-center mt-5 mb-5 pb-5 pt-5 fw-bolder fs-1">كيف يعمل التطبيق</h2>
+
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="backe-test  text-center">1</div>
                             <div class="card-body mt-3">
-                                <h5 class="card-title fw-bolder text-center">Download & Register</h5>
-                                <p class="card-text text-muted text-center">Get the app and create your account</p>
+                                <h5 class="card-title fw-bolder text-center">حمّل التطبيق وسجل</h5>
+                                <p class="card-text text-muted text-center">قم بتحميل التطبيق وإنشاء حسابك</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="backe-test text-center">2</div>
                             <div class="card-body mt-3">
-                                <h5 class="card-title fw-bolder text-center">Book Your Ride</h5>
-                                <p class="card-text text-muted text-center">Choose your pickup and drop-off locations
-                                </p>
+                                <h5 class="card-title fw-bolder text-center">احجز رحلتك</h5>
+                                <p class="card-text text-muted text-center">اختر نقطة الانطلاق والوصول</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100  border-0 shadow-sm p-3">
                             <div class="backe-test text-center">3</div>
                             <div class="card-body mt-3">
-                                <h5 class="card-title fw-bolder text-center">Enjoy Your Journey</h5>
-                                <p class="card-text text-muted text-center">Track your driver and arrive safely</p>
+                                <h5 class="card-title fw-bolder text-center">استمتع برحلتك</h5>
+                                <p class="card-text text-muted text-center">تتبع السائق ووصل بأمان</p>
                             </div>
                         </div>
                     </div>
@@ -341,9 +406,9 @@
         <!-- ==================== HOW IT WORK section ==================== -->
 
         <!-- ==================== Customer reviews ==================== -->
-        <section class="container customer-reviews mt-5">
+        <section class="container-fluid customer-reviews mt-5" id="testimonials">
             <div class="container py-5">
-                <h2 class="text-center section-title">What Our Users Say</h2>
+                <h2 class="text-center section-title">ماذا يقول مستخدمونا</h2>
 
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-4">
@@ -351,13 +416,13 @@
                             <div class="testimonial-header">
                                 <img src="assets/Imges/test.webp" alt="Sarah Johnson" class="testimonial-img" />
                                 <div>
-                                    <p class="testimonial-name fw-bolder">Sarah Johnson</p>
-                                    <p class="testimonial-location">New York</p>
+                                    <p class="testimonial-name fw-bolder">سارة جونسون</p>
+                                    <p class="testimonial-location">نيويورك</p>
                                 </div>
                             </div>
                             <div class="testimonial-stars">★★★★★</div>
                             <div class="testimonial-text">
-                                The app is incredibly easy to use and I love how reliable the drivers are.
+                                التطبيق سهل الاستخدام للغاية وأحب مدى موثوقية السائقين.
                             </div>
                         </div>
                     </div>
@@ -367,13 +432,13 @@
                             <div class="testimonial-header">
                                 <img src="assets/Imges/test.webp" alt="Michael Chen" class="testimonial-img" />
                                 <div>
-                                    <p class="testimonial-name fw-bolder">Michael Chen</p>
-                                    <p class="testimonial-location">San Francisco</p>
+                                    <p class="testimonial-name fw-bolder">مايكل تشين</p>
+                                    <p class="testimonial-location">سان فرانسيسكو</p>
                                 </div>
                             </div>
                             <div class="testimonial-stars">★★★★★</div>
                             <div class="testimonial-text">
-                                As a driver, the earnings are great and the platform is very user-friendly.
+                                كسائق، الأرباح ممتازة والمنصة سهلة الاستخدام للغاية.
                             </div>
                         </div>
                     </div>
@@ -383,45 +448,47 @@
                             <div class="testimonial-header">
                                 <img src="assets/Imges/test.webp" alt="Emily Davis" class="testimonial-img" />
                                 <div>
-                                    <p class="testimonial-name fw-bolder">Emily Davis</p>
-                                    <p class="testimonial-location">Chicago</p>
+                                    <p class="testimonial-name fw-bolder">إميلي ديفيس</p>
+                                    <p class="testimonial-location">شيكاغو</p>
                                 </div>
                             </div>
                             <div class="testimonial-stars">★★★★★</div>
                             <div class="testimonial-text">
-                                Best ride-hailing app I’ve used. The real-time tracking feature is a game-changer.
+                                أفضل تطبيق لطلب السيارات استخدمته. ميزة التتبع في الوقت الفعلي مذهلة.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- ==================== Customer reviews ==================== -->
     </main>
     <!-- ==================== Download Section ==================== -->
-    <section class=" container-fluid cta-section text-white text-center position-relative py-5 bg-image">
+    <section class=" container-fluid cta-section text-white text-center position-relative py-5 bg-image" id="contact">
         <div class="overlay-dark"></div>
         <div class="container position-relative z-2">
-            <h2 class="fw-bold mb-3">Ready to Get Started?</h2>
-            <p class="mb-4">Join thousands of satisfied riders and drivers today</p>
+            <h2 class="fw-bold mb-3">هل أنت مستعد للانطلاق؟</h2>
+            <p class="mb-4">انضم إلى آلاف الركاب والسائقين الراضين اليوم</p>
             <div class="d-flex justify-content-center gap-3 flex-wrap">
                 <a href="#" class="store-btn">
-                    <i class="fab fa-apple fa-2x me-2"></i>
-                    <div class="text-start">
-                        <small class="store-small">Download on the</small><br>
+                    <i class="fab fa-apple fa-2x ms-2"></i>
+                    <div class="text-end">
+                        <small class="store-small">تنزيل من</small><br>
                         <span class="store-title">App Store</span>
                     </div>
                 </a>
                 <a href="#" class="store-btn">
-                    <i class="fab fa-google-play fa-2x me-2"></i>
-                    <div class="text-start">
-                        <small class="store-small">Get it on</small><br>
+                    <i class="fab fa-google-play fa-2x ms-2"></i>
+                    <div class="text-end">
+                        <small class="store-small">احصل عليه من</small><br>
                         <span class="store-title">Google Play</span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
+
     <!-- ==================== Download Section ==================== -->
 
     <!-- ==================== footer ==================== -->
@@ -433,36 +500,36 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="mb-3">
                         <a class="navbar-brand" href="#">
-                            <img class="img-fluid" src="assets/Imges/logo-white.png " alt="Swiftride Logo">
+                            <img class="img-fluid logo-img-w" src="assets/Imges/logo-ar.png " alt="Swiftride Logo">
                         </a>
                     </h5>
-                    <p class="fw-light">Making transportation easier and more accessible for everyone.</p>
+                    <p class="fw-light">نجعل وسائل النقل أسهل وأكثر سهولة للجميع.</p>
                 </div>
 
                 <!-- Company -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase fw-bold mb-3">Company</h6>
-                    <p><a href="#" class="text-white text-decoration-none  fw-light ">About Us</a></p>
-                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Careers</a></p>
-                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Press</a></p>
-                    <p><a href="#" class="text-white text-decoration-none  fw-light ">Blog</a></p>
+                    <h6 class="text-uppercase fw-bold mb-3">الشركة</h6>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">من نحن</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">الوظائف</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">الصحافة</a></p>
+                    <p><a href="#" class="text-white text-decoration-none  fw-light ">المدونة</a></p>
                 </div>
 
                 <!-- Resources -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase fw-bold mb-3">Resources</h6>
-                    <p><a href="#" class="text-white text-decoration-none fw-light ">Help Center</a></p>
-                    <p><a href="#" class="text-white text-decoration-none fw-light ">Safety</a></p>
-                    <p><a href="#" class="text-white text-decoration-none fw-light ">Cities</a></p>
-                    <p><a href="#" class="text-white text-decoration-none fw-light ">Partners</a></p>
+                    <h6 class="text-uppercase fw-bold mb-3">الموارد</h6>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">مركز المساعدة</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">السلامة</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">المدن</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light ">الشركاء</a></p>
                 </div>
 
                 <!-- Legal -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase fw-bold mb-3">Legal</h6>
-                    <p><a href="#" class="text-white text-decoration-none fw-light">Terms of Service</a></p>
-                    <p><a href="#" class="text-white text-decoration-none fw-light">Privacy Policy</a></p>
-                    <p><a href="#" class="text-white text-decoration-none fw-light">Cookie Policy</a></p>
+                    <h6 class="text-uppercase fw-bold mb-3">القانوني</h6>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">شروط الخدمة</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">سياسة الخصوصية</a></p>
+                    <p><a href="#" class="text-white text-decoration-none fw-light">سياسة الكوكيز</a></p>
                 </div>
 
             </div>
@@ -472,19 +539,20 @@
 
             <!-- Bottom Row -->
             <div class="row align-items-center pb-3 ">
-                <div class="col-md-5 text-center text-md-start bo-ro">
-                    <p class="mb-0 fw-light ">© 2025 Swiftride. All rights reserved.</p>
+                <div class="col-md-5 text-center text-md-end bo-ro">
+                    <p class="mb-0 fw-light ">© 2025 Swiftride. جميع الحقوق محفوظة.</p>
                 </div>
 
-                <div class="col-md-5 text-center text-md-end bo-ro2">
+                <div class="col-md-5 text-center text-md-start bo-ro2">
                     <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-icon text-white me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- ==================== footer ==================== -->
 
 
@@ -497,8 +565,29 @@
     <!-- Bootstrap Source Map (development only) - Debugging helper for minified JS -->
     <script src="assets/JS/bootstrap.bundle.min.js.map"></script>
 
+    <!-- ==================== JavaScript Files ==================== -->
+    <!-- Font Awesome JS (minified) - JavaScript version of the icon library -->
+    <script src="assets/JS/all.min.js"></script>
+    <!-- Bootstrap Bundle JS (minified) - Includes Bootstrap JS + Popper.js for components -->
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Source Map (development only) - Debugging helper for minified JS -->
+    <script src="assets/JS/bootstrap.bundle.min.js.map"></script>
 
+    <!-- <script>
+        const maxWidth = 430;
 
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("*").forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.right > maxWidth || rect.left < 0) {
+                    el.style.outline = "3px solid red";
+                    el.style.backgroundColor = "rgba(255, 0, 0, 0.1)";
+                    console.warn("🚨 عنصر خارج الحد:", el);
+                    console.log("↪️ معلومات العنصر: left =", rect.left, "| right =", rect.right, "| width =", rect.width);
+                }
+            });
+        });
+    </script> -->
 </body>
 
 </html>
