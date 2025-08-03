@@ -74,23 +74,354 @@ body {
 }
 .img-iphone {
   position: absolute;
-  top: 300px;
+  top: 50.5%;
   left: 47%;
   transform: translate(-50%, -50%);
-  width: 260px;
-  height: 530px;
+  width: 210px;
+  height: 450px;
   border-radius: 30px;
   z-index: 2;
   background-color: white;
 }
 .inner-screen {
   position: absolute;
-  top: 47%;
+  top: 52%;
   left: 47%;
   transform: translate(-50%, -50%);
   width: 340px;
-  height: 600px;
+  height: 500px;
   object-fit: cover;
   border-radius: 30px;
   z-index: 3;
+}
+
+.desktop-img {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: inline;
+  }
+}
+
+@media (width: 768px) {
+  .chart {
+    position: relative;
+    width: 716px;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 600px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 675px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+
+@media (width: 1024px) {
+  .chart {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 530px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (max-width: 500px) {
+  .chart {
+    position: relative;
+    width: 300px;
+    height: 275px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 375px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 425px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (max-width: 376px) {
+  .chart {
+    position: relative;
+    width: 323px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+
+@media (width: 390px) {
+  .chart {
+    position: relative;
+    width: 338px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (width: 412px) {
+  .chart {
+    position: relative;
+    width: 360px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (width: 414px) {
+  .chart {
+    position: relative;
+    width: 362px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (min-width: 420px) and (max-width: 440px) {
+  .chart {
+    position: relative;
+    width: 377.5px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+}
+@media (width: 320px) {
+  .chart {
+    position: relative;
+    width: 268px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .img-iphone {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 380px;
+    border-radius: 30px;
+    z-index: 2;
+    background-color: white;
+  }
+  .inner-screen {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 3;
+  }
+  .hero-title {
+    width: 250px;
+  }
+  .hero-text {
+    width: 260px;
+  }
 }

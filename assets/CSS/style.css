@@ -259,22 +259,22 @@ header.container-fluid {
   }
   .img-iphone {
     position: absolute;
-    top: 360px;
+    top: 340px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 270px;
-    height: 600px;
+    width: 240px;
+    height: 530px;
     border-radius: 30px;
     z-index: 2;
     background-color: white;
   }
   .inner-screen {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 340px;
-    height: 675px;
+    height: 600px;
     object-fit: cover;
     border-radius: 30px;
     z-index: 3;
