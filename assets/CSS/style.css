@@ -23,12 +23,16 @@ body {
   margin: 0 40px;
 }
 .blue-color {
-  color: #36b9e9;
+  color: #36b9e9 !important;
 }
 .light-gray {
   color: #4b5563;
 }
 /*============================ HEADER ============================*/
+header.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .logo-img {
   width: 150px;
   height: auto;
@@ -313,7 +317,7 @@ body {
     z-index: 2;
     background-color: white;
   }
-    
+
   .inner-screen {
     position: absolute;
     top: 59%;
@@ -324,9 +328,9 @@ body {
     object-fit: cover;
     border-radius: 30px;
     z-index: 3;
-  } 
+  }
 }
-@media (width: 412px)  {
+@media (width: 412px) {
   .chart {
     position: relative;
     width: 360px;
@@ -337,7 +341,7 @@ body {
     margin: 0 auto;
     margin-top: 70px;
   }
-.img-iphone {
+  .img-iphone {
     position: absolute;
     top: 270px;
     left: 50%;
@@ -348,7 +352,7 @@ body {
     z-index: 2;
     background-color: white;
   }
-    
+
   .inner-screen {
     position: absolute;
     top: 59%;
@@ -359,7 +363,7 @@ body {
     object-fit: cover;
     border-radius: 30px;
     z-index: 3;
-  } 
+  }
 }
 @media (width: 414px) {
   .chart {
@@ -372,7 +376,7 @@ body {
     margin: 0 auto;
     margin-top: 70px;
   }
-.img-iphone {
+  .img-iphone {
     position: absolute;
     top: 270px;
     left: 50%;
@@ -383,7 +387,7 @@ body {
     z-index: 2;
     background-color: white;
   }
-    
+
   .inner-screen {
     position: absolute;
     top: 59%;
@@ -394,7 +398,7 @@ body {
     object-fit: cover;
     border-radius: 30px;
     z-index: 3;
-  } 
+  }
 }
 @media (min-width: 420px) and (max-width: 440px) {
   .chart {
