@@ -790,6 +790,7 @@ header.container-fluid {
 }
 @media (width: 768px) {
   .bo-ro2 {
+    margin-top: -20px;
     margin-left: 100px;
   }
 }
