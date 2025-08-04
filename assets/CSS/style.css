@@ -167,14 +167,14 @@ header.container-fluid {
 }
 .chart {
   position: relative;
-  width: 750px;
+  width: 700px;
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -9;
   margin: 0 auto;
   margin-top: 50px;
-  margin-left: 70px;
+  margin-left: 100px;
 }
 .img-iphone {
   position: absolute;
